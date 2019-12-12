@@ -136,16 +136,34 @@ body {
   height: 100%;
   width: 100%;
 }
+html {
+  font-family: 'Lakki Reddy', cursive;
+}
+body {
+  background-color: lightblue;
+}
 nav {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 nav a {
-  font-size: 150%;
+  font-size: 100%;
   text-decoration: none;
-  border: dashed 2px pink;
+  border: dashed 2px purple;
   border-radius: 20%;
-  padding: 1%;
+  padding: 1% ;
+  margin: 4% 0;
+}
+@media (max-width: 500px) {
+  nav a {
+    text-align: center;
+  }
 }
 .intro {
   width: 100%;
@@ -155,7 +173,7 @@ nav a {
   flex-direction: column;
 }
 .Hire {
-  background-color: pink ;
+  background-color: lightblue;
   border-radius: 20%;
 }
 .sponge {
@@ -166,11 +184,21 @@ nav a {
   background: pink;
   padding: 5%;
   border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.about-me h2 {
+  font-size: 110%;
+  text-decoration: underline;
 }
 .work-history {
   background: yellow;
   padding: 5%;
   display: flex;
+}
+.work-history h2 {
+  font-size: 110%;
+  text-decoration: underline;
 }
 .history {
   width: 48%;
@@ -182,10 +210,16 @@ nav a {
   justify-content: center;
   align-items: center;
 }
+.skill ul {
+  list-style-type: square;
+}
 .contact {
   background: pink;
   padding: 5%;
   border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer {
   background: black;
