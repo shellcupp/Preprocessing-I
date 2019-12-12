@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	//border: solid grey 2px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -50,10 +51,112 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 4% 0;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%
 }
+//variables
+@font: 'Lakki Reddy', cursive;
+@color: lightblue;
+//mixins
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.column(){
+	display: flex;
+	flex-direction: column;
+}
+html{
+	font-family: @font;
+}
+body{
+	background-color: lightblue;
+}
+nav{
+	display: flex;
+	justify-content: space-evenly;
+	@media(max-width: 500px){
+			display: flex;
+			flex-direction: column;
+	}
+a{
+	font-size: 100%;
+	text-decoration: none;
+	border: dashed 2px purple;
+	border-radius: 20%;
+	padding: 1% ;
+	margin: 4% 0;
+	@media(max-width: 500px){
+			text-align: center;
+	   }
+}//closes a
+}//closes nav
+.intro {
+	width:100%;
+	background: yellow;	
+	padding:5% ;
+	display: flex;
+	flex-direction: column;
+}
+.Hire{
+	background-color: @color;
+	border-radius: 20%;
+}
+.sponge {
+	width:25%;
+	border-radius: 20%;
+}
+.about-me{
+	background: pink;
+	padding: 5%;
+	border-radius: 20%;
+	.column();
+	h2{
+		font-size: 110%;
+		text-decoration: underline;
+	}
+}
+.work-history{
+	background: yellow;
+	padding: 5%;
+	display: flex;
+	h2{
+		font-size: 110%;
+		text-decoration: underline;
+	}
+}
+.history{
+	width:48%
+}
+.skill{
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	ul{
+		list-style-type: square;	
+	}
 
+}//closes skill
+.contact{
+	background: pink;
+	padding: 5%;
+	border-radius: 20%;
+	.center();
+}
+footer{
+	background: black;
+	color:white;	
+a{
+	color: yellow;
+	text-decoration: none;
+}//closes a
+}//closes footer

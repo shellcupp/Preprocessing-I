@@ -1,1 +1,231 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin: 4% 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+html {
+  font-family: 'Lakki Reddy', cursive;
+}
+body {
+  background-color: lightblue;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+nav a {
+  font-size: 100%;
+  text-decoration: none;
+  border: dashed 2px purple;
+  border-radius: 20%;
+  padding: 1% ;
+  margin: 4% 0;
+}
+@media (max-width: 500px) {
+  nav a {
+    text-align: center;
+  }
+}
+.intro {
+  width: 100%;
+  background: yellow;
+  padding: 5% ;
+  display: flex;
+  flex-direction: column;
+}
+.Hire {
+  background-color: lightblue;
+  border-radius: 20%;
+}
+.sponge {
+  width: 25%;
+  border-radius: 20%;
+}
+.about-me {
+  background: pink;
+  padding: 5%;
+  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.about-me h2 {
+  font-size: 110%;
+  text-decoration: underline;
+}
+.work-history {
+  background: yellow;
+  padding: 5%;
+  display: flex;
+}
+.work-history h2 {
+  font-size: 110%;
+  text-decoration: underline;
+}
+.history {
+  width: 48%;
+}
+.skill {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill ul {
+  list-style-type: square;
+}
+.contact {
+  background: pink;
+  padding: 5%;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  background: black;
+  color: white;
+}
+footer a {
+  color: yellow;
+  text-decoration: none;
+}
